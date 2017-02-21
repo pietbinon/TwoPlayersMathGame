@@ -12,9 +12,9 @@
 
 @interface Player : NSObject
 
-@property NSString *name;
-@property int score;
-@property int lives;
+@property (nonatomic) NSString *name;
+@property (nonatomic) int score;
+@property (nonatomic) int lives;
 
 - (void) loseLife;
 - (instancetype) initWithName: (NSString *) name;

@@ -13,11 +13,11 @@
 
 @interface GameController : NSObject
 
-@property int leftValue;
-@property int rightValue;
-@property int numberPosition;
-@property NSString *answer;
-@property NSArray *players;
+@property (nonatomic) int leftValue;
+@property (nonatomic) int rightValue;
+@property (nonatomic) int numberPosition;
+@property (nonatomic) NSString *answer;
+@property (nonatomic) NSArray *players;
 
 - (NSString *) currentAnswer: (int) number;
 - (Player *) curPlayer;
